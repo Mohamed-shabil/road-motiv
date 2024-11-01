@@ -31,18 +31,18 @@ const ContactPage = () => {
         },
     ];
     return (
-        <section className="max-w-[1200px] mx-auto h-auto mb-28">
+        <section className="max-w-[1200px] mx-auto h-auto my-28">
             <div className="flex items-center justify-center flex-col py-10">
                 <h5 className="rounded-full px-2 py-1 bg-primary/20 text-primary inline-block my-4 text-sm">
-                    | Cargon-Transport Logistics
+                    | Road Motiv Logistics
                 </h5>
                 <h2 className="text-3xl text-center md:text-center md:text-4xl font-semibold leading-tight mx-4">
-                    Efficient Working Process
+                    Let Us Know Your Queries!
                 </h2>
                 <p className="text-sm max-w-lg  text-center my-2 mx-4">
-                    our working process is designed to deliver efficient,
-                    reliable, & tailored logistics solutions. From the initial
-                    consultation to the final delivery,
+                    Team AGS Logistics is always happy to answer all your
+                    queries. Please contact us in the given phone number or mail
+                    id at your convenience. We shall get back to you soon.
                 </p>
             </div>
             <div className="flex justify-center flex-col gap-4">
@@ -52,7 +52,7 @@ const ContactPage = () => {
                             className="col-span-12 flex justify-center md:col-span-6"
                             key={contact.title}
                         >
-                            <div className="mx-2 p-4 w-full max-w-xl border rounded-lg">
+                            <div className="mx-2 p-4 w-full max-w-xl rounded-lg bg-white">
                                 <div className="flex gap-2">
                                     <div className="w-full flex gap-4 items-center">
                                         <div className="rounded-lg w-12 h-12 bg-primary/30 flex items-center justify-center">

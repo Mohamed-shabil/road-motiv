@@ -1,4 +1,13 @@
-import { ChartLine, CloudCog, Library, Shield } from "lucide-react";
+import {
+    AlarmClockCheck,
+    ChartLine,
+    CircleDollarSign,
+    CloudCog,
+    Globe,
+    Handshake,
+    Library,
+    Shield,
+} from "lucide-react";
 import React from "react";
 
 const Features = () => {
@@ -6,25 +15,27 @@ const Features = () => {
         <section className="h-auto mb-4 md:h-[43rem] bg-black">
             <div className="max-w-[1200px] mx-auto">
                 <div className="flex items-center justify-center flex-col py-10">
-                    <h5 className="rounded-full bg-slate-400/20 text-white px-2 py-1 inline-block my-4 text-sm">
-                        | Cargon-Transport Logistics
+                    <h5 className="rounded-full bg-primary/50 text-white px-2 py-1 inline-block my-4 text-sm">
+                        | Road Motiv Logistics
                     </h5>
                     <h2 className="text-white text-3xl font-semibold leading-tight px-2 text-center">
-                        Efficient Working Process
+                        Globally Competitive Solutions
                     </h2>
                     <p className="text-sm max-w-lg text-gray-400 text-center my-2 px-2 ">
-                        our working process is designed to deliver efficient,
-                        reliable, & tailored logistics solutions. From the
-                        initial consultation to the final delivery,
+                        We provide globally competitive solutions tailored to
+                        meet the diverse needs of our clients.
                     </p>
                 </div>
                 <div className="flex flex-row flex-wrap gap-4 justify-center">
                     <div className="border border-gray-700 w-full max-w-[280px] p-4 rounded-md hover:bg-slate-700 transition">
                         <div className="h-10 w-10  bg-slate-900 rounded-md flex items-center justify-center mt-2 mb-4">
-                            <Library className="text-white" />
+                            <CircleDollarSign
+                                strokeWidth={1.5}
+                                className="text-white"
+                            />
                         </div>
                         <h4 className="text-xl text-white font-medium mb-2">
-                            Coordination & Execution
+                            Cost-Effective Services
                         </h4>
                         <p className="text-white text-sm font-light">
                             We then coordinate & manage all aspects of
@@ -34,40 +45,50 @@ const Features = () => {
 
                     <div className="border border-gray-700 w-full max-w-[280px] p-4 rounded-md hover:bg-slate-700 transition">
                         <div className="h-10 w-10  bg-slate-900 rounded-md flex items-center justify-center mt-2 mb-4">
-                            <Shield className="text-white" />
+                            <Globe strokeWidth={1.5} className="text-white" />
                         </div>
                         <h4 className="text-xl text-white font-medium mb-2">
-                            Secure Transportation
+                            Worldwide Reach
                         </h4>
                         <p className="text-white text-sm font-light">
-                            Trust our meticulous process to streamline your
-                            supply chain and drive your business forward.
+                            Our global presence allows us to make informed
+                            logistics decisions, leveraging extensive experience
+                            to establish ourselves as a leader in the industry.
                         </p>
                     </div>
 
                     <div className="border border-gray-700 w-full max-w-[280px] p-4 rounded-md hover:bg-slate-700 transition">
                         <div className="h-10 w-10  bg-slate-900 rounded-md flex items-center justify-center mt-2 mb-4">
-                            <ChartLine className="text-white" />
+                            <Handshake
+                                strokeWidth={1.5}
+                                className="text-white"
+                            />
                         </div>
                         <h4 className="text-xl text-white font-medium mb-2">
-                            Planning & Strategy
+                            skilled Team
                         </h4>
                         <p className="text-white text-sm font-light">
-                            Throughout the journey, our team monitors progress
-                            in real-time, providing you with updates.
+                            Our exceptional customer service, backed by a team
+                            of highly skilled professionals, guarantees client
+                            satisfaction. Experience unmatched service and peace
+                            of mind when you choose us.
                         </p>
                     </div>
 
                     <div className="border border-gray-700 w-full max-w-[280px] p-4 rounded-md hover:bg-slate-700 transition">
                         <div className="h-10 w-10  bg-slate-900 rounded-md flex items-center justify-center mt-2 mb-4">
-                            <CloudCog className="text-white" />
+                            <AlarmClockCheck
+                                strokeWidth={1.5}
+                                className="text-white"
+                            />
                         </div>
                         <h4 className="text-xl text-white font-medium mb-2">
-                            Real-Time Monitoring
+                            Always On Time, Every Time
                         </h4>
                         <p className="text-white text-sm font-light">
-                            Finally, we ensure timely and secure delivery of
-                            your goods, followed by a thorough review.
+                            We value your time, so you can trust us with your
+                            important deliveries. With Road Motiv Logistics,
+                            your precious documents will always arrive on time.
                         </p>
                     </div>
                 </div>

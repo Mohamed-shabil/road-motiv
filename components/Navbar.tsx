@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -9,20 +10,18 @@ const Navbar = () => {
         { label: "Testimony", url: "#testimony" },
     ];
     return (
-        <nav className=" bg-white border-gray-200 shadow-md">
-            <div className="max-w-[1200px] flex flex-wrap items-center justify-between mx-auto py-6">
+        <nav className=" bg-white border-gray-200 shadow-md fixed z-50 w-full top-0">
+            <div className="max-w-[1200px] flex flex-wrap items-center justify-between mx-auto py-2">
                 <Link
                     href="https://flowbite.com/"
                     className="flex items-center space-x-3 rtl:space-x-reverse"
                 >
-                    <img
-                        src="https://flowbite.com/docs/images/logo.svg"
-                        className="h-8"
-                        alt="Flowbite Logo"
+                    <Image
+                        src={"/logo.png"}
+                        width={150}
+                        height={50}
+                        alt="Road Motive"
                     />
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap">
-                        Road Motiv.
-                    </span>
                 </Link>
                 <button
                     data-collapse-toggle="navbar-default"

@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import {
     Anvil,
     Backpack,
@@ -6,64 +7,25 @@ import {
     ChartSpline,
     icons,
 } from "lucide-react";
+import Image from "next/image";
 import React from "react";
+import Badge from "./Badge";
 
 const services = [
     {
-        icon: (
-            <Building2
-                strokeWidth={1.25}
-                size={"2.5em"}
-                className="text-white"
-            />
-        ),
-        title: "Smart business model that works for you",
+        title: "Sea Freight",
+        description:
+            "Our skilled team strategically optimizes shipping routes to deliver the most cost-efficient solutions while rigorously upholding precise timing and delivery commitments.",
     },
     {
-        icon: (
-            <Anvil strokeWidth={1.25} size={"2.5em"} className="text-white" />
-        ),
-        title: "Personable Dedicated Support",
+        title: "Land Freight",
+        description:
+            "Our trained personnel, knowledgeable about technical capabilities and precise legal regulations, provide reliable and responsible services.",
     },
     {
-        icon: (
-            <Backpack
-                strokeWidth={1.25}
-                size={"2.5em"}
-                className="text-white"
-            />
-        ),
-        title: "Award Winning Training",
-    },
-    {
-        icon: (
-            <ChartBar
-                strokeWidth={1.25}
-                size={"2.5em"}
-                className="text-white"
-            />
-        ),
-        title: "Highest Commission Best Supplier Partners",
-    },
-    {
-        icon: (
-            <ChartSpline
-                strokeWidth={1.25}
-                size={"2.5em"}
-                className="text-white"
-            />
-        ),
-        title: "Innovative Marketing",
-    },
-    {
-        icon: (
-            <Building2
-                strokeWidth={1.25}
-                size={"2.5em"}
-                className="text-white"
-            />
-        ),
-        title: "Trailblazing Technology",
+        title: "Air Freight",
+        description:
+            "This quick and dependable transportation to global destinations, utilizing the best airlines, is recommended for sensitive and high-value shipments.",
     },
 ];
 
@@ -72,35 +34,56 @@ const Services = () => {
         <div className="bg-primary/5 h-auto">
             <div className="max-w-[1200px] mx-4 md:mx-auto">
                 <div className="flex items-center justify-center flex-col py-10">
-                    <h5 className="rounded-full bg-primary/30 text-primary px-2 py-1 inline-block my-4 text-sm">
-                        | Cargon-Transport Logistics
-                    </h5>
-                    <h2 className="text-center text-2xl md:text-4xl font-semibold leading-tight ">
-                        Efficient Working Process
+                    <Badge content="| Road Motiv Services" />
+                    <h2 className="text-center text-2xl md:text-4xl font-semibold leading-tight text-primary ">
+                        Seamless Global Forwarding Solutions
                     </h2>
-                    <p className="text-sm max-w-lg text-gray-700 text-center my-2">
-                        our working process is designed to deliver efficient,
-                        reliable, & tailored logistics solutions. From the
-                        initial consultation to the final delivery,
+                    <p className="text-sm max-w-lg text-gray-700 text-center my-2 text-muted-foreground">
+                        At Road Motiv Logistics, we offer premium services
+                        including air freight, sea freight, land freight,
+                        customs clearance, warehousing, project cargo handling,
+                        insurance, and a quality assurance program.
                     </p>
                 </div>
-                <div className="pb-14 flex items-center flex-wrap gap-4">
+                <div className="pb-14 flex items-center flex-col flex-wrap gap-4">
                     {services.map((service, i) => (
                         <div
-                            className="w-full rounded-lg max-w-sm border border-gray-200 min-h-[240px] bg-white shadow-sm"
-                            key={service.title}
+                            className={cn(
+                                "flex flex-row",
+                                (i + 1) % 2 == 0
+                                    ? "flex-row-reverse"
+                                    : "flex-row"
+                            )}
+                            data-aos={
+                                (i + 1) % 2 == 0 ? "fade-left" : "fade-right"
+                            }
                         >
-                            <div className=" p-8">
-                                <div className="flex justify-between">
-                                    <div className="h-24 w-24 bg-primary rounded-full grid place-content-center">
-                                        {service.icon}
-                                    </div>
-                                    <span className="text-6xl bg-gradient-to-b from-blue-500 to-white text-transparent bg-clip-text">
-                                        {i + 1}
-                                    </span>
-                                </div>
-                                <div className="text-xl md:text-2xl font-medium mt-4">
-                                    {service.title}
+                            <div className="flex-1 flex items-center justify-center">
+                                <Image
+                                    src={`/s${i + 1}.png`}
+                                    width={500}
+                                    height={500}
+                                    alt=""
+                                />
+                            </div>
+                            <div className="flex-1 flex items-center">
+                                <div
+                                    className="max-w-md"
+                                    data-aos={
+                                        (i + 1) % 2 == 0
+                                            ? "fade-righ"
+                                            : "fade-left"
+                                    }
+                                >
+                                    <h1 className="text-6xl bg-gradient-to-b from-[#253d86] to-white text-transparent bg-clip-text">
+                                        0{i + 1}
+                                    </h1>
+                                    <h1 className="font-medium text-2xl my-4">
+                                        {service.title}
+                                    </h1>
+                                    <p className="text-sm">
+                                        {service.description}
+                                    </p>
                                 </div>
                             </div>
                         </div>

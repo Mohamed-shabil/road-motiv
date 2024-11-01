@@ -1,14 +1,9 @@
 import {
     AlarmClockCheck,
-    ChartLine,
     CircleDollarSign,
-    CloudCog,
     Globe,
     Handshake,
-    Library,
-    Shield,
 } from "lucide-react";
-import React from "react";
 
 const Features = () => {
     return (

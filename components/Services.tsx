@@ -1,14 +1,5 @@
 import { cn } from "@/lib/utils";
-import {
-    Anvil,
-    Backpack,
-    Building2,
-    ChartBar,
-    ChartSpline,
-    icons,
-} from "lucide-react";
 import Image from "next/image";
-import React from "react";
 import Badge from "./Badge";
 
 const services = [
@@ -48,6 +39,7 @@ const Services = () => {
                 <div className="pb-14 flex items-center flex-col flex-wrap gap-4">
                     {services.map((service, i) => (
                         <div
+                            key={i}
                             className={cn(
                                 "flex flex-row",
                                 (i + 1) % 2 == 0

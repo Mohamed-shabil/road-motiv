@@ -1,6 +1,3 @@
-import * as React from "react";
-
-import { Card, CardContent } from "@/components/ui/card";
 import {
     Carousel,
     CarouselContent,
@@ -9,7 +6,7 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Star } from "lucide-react";
-
+import Image from "next/image";
 const testimonials = [
     {
         name: "Mohamed Shabil",
@@ -69,7 +66,9 @@ export function Testimony() {
                                 <div className="p-1">
                                     <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
                                         <div className="flex items-center gap-4">
-                                            <img
+                                            <Image
+                                                width={50}
+                                                height={50}
                                                 alt=""
                                                 src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
                                                 className="size-14 rounded-full object-cover"

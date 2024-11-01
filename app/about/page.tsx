@@ -18,11 +18,9 @@ const AboutPage = () => {
                                             The Tale of Our Achievement Story
                                         </h2>
                                         <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                                            Our achievement story is a testament
-                                            to teamwork and perseverance.
-                                            Together, we've overcome challenges,
-                                            celebrated victories, and created a
-                                            narrative of progress and success.
+                                            {
+                                                "Our achievement story is a testament to teamwork and perseverance. Together, we've overcome challenges, celebrated victories, and created a narrative of progress and success."
+                                            }
                                         </p>
                                     </div>
                                 </div>
@@ -127,13 +125,9 @@ const AboutPage = () => {
                                         Empowering Each Other to Succeed
                                     </h2>
                                     <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                                        Every project we've undertaken has been
-                                        a collaborative effort, where every
-                                        person involved has left their mark.
-                                        Together, we've not only constructed
-                                        buildings but also built enduring
-                                        connections that define our success
-                                        story.
+                                        {
+                                            "Every project we've undertaken has been a collaborative effort, where every person involved has left their mark. Together, we've not only constructed buildings but also built enduring connections that define our success story."
+                                        }
                                     </p>
                                 </div>
                                 <div className="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">

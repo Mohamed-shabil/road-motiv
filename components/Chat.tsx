@@ -3,7 +3,7 @@ import React from "react";
 
 const Chat = () => {
     return (
-        <Link href="/whatsapp.com">
+        <Link href="https://wa.me/+966598065938?text=Hi Road Motive">
             <div className="w-14 h-14 rounded-full fixed bottom-20 right-14 shadow-md grid place-items-center bg-[#075E54]">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

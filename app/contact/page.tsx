@@ -9,25 +9,27 @@ const ContactPage = () => {
             icon: <CircleHelp className="text-primary" />,
             title: "Help Center",
             description: "Get Question ? We got an answer",
-            link: "#",
+            link: "",
         },
         {
             icon: <Phone className="text-primary" />,
             title: "Call us now",
-            description: "Get Question ? We got an answer",
-            link: "#",
+            description:
+                "Need immediate assistance? Call us directly for support.",
+            link: "tel:+966 570855938",
         },
         {
             icon: <MessageSquareText className="text-primary" />,
             title: "Chat with us",
-            description: "Get Question ? We got an answer",
-            link: "#",
+            description: "Prefer texting? Start a WhatsApp chat with our team.",
+            link: "https://wa.me/+966598065938?text=Hi Road Motive",
         },
         {
             icon: <Mail className="text-primary" />,
             title: "Email us now",
-            description: "Get Question ? We got an answer",
-            link: "#",
+            description:
+                "Have a question? Send us an email and we’ll get back to you soon.",
+            link: "mailto:info@roadmotive.com",
         },
     ];
     return (
@@ -40,7 +42,7 @@ const ContactPage = () => {
                     Let Us Know Your Queries!
                 </h2>
                 <p className="text-sm max-w-lg  text-center my-2 mx-4">
-                    Team AGS Logistics is always happy to answer all your
+                    Team Road Motiv Logistics is always happy to answer all your
                     queries. Please contact us in the given phone number or mail
                     id at your convenience. We shall get back to you soon.
                 </p>

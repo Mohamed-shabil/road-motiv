@@ -62,10 +62,10 @@ const About = () => {
                         </h2>
                         <p className="text-sm text-center md:text-left text-muted-foreground my-5">
                             The preferred choice for logistics in the GCC, we
-                            are Road Motiv Logistics, headquartered in the UAE.
-                            Our services extend to Saudi Arabia, and we have
-                            evolved into one of the most sought-after and
-                            trusted international companies in the region.
+                            are Road Motiv Logistics, Headquartered in the Saudi
+                            Arabia. Our Services extended to all over GCC, and
+                            we have evolved into one of the most sought-after
+                            and trusted international companies in the region.
                         </p>
                         <div className="flex flex-col md:h-16 h-auto flex-wrap gap-2 my-4">
                             <div className="flex gap-2 items-center">

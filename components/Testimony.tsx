@@ -42,13 +42,8 @@ export function Testimony() {
                     | Cargon-Transport Logistics
                 </h5>
                 <h2 className="text-3xl text-center md:text-center md:text-4xl font-semibold leading-tight mx-4 text-primary">
-                    Efficient Working Process
+                    Why Choose us?
                 </h2>
-                <p className="text-sm max-w-lg  text-center my-2 mx-4">
-                    our working process is designed to deliver efficient,
-                    reliable, & tailored logistics solutions. From the initial
-                    consultation to the final delivery,
-                </p>
             </div>
             <div className="">
                 <Carousel

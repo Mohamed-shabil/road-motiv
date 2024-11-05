@@ -18,6 +18,11 @@ const services = [
         description:
             "This quick and dependable transportation to global destinations, utilizing the best airlines, is recommended for sensitive and high-value shipments.",
     },
+    {
+        title: "Equipment Rental",
+        description:
+            "This quick and dependable transportation to global destinations, utilizing the best airlines, is recommended for sensitive and high-value shipments.",
+    },
 ];
 
 const Services = () => {

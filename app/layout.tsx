@@ -26,7 +26,7 @@ export default function RootLayout({
             <body className={inter.className}>
                 <Navbar />
                 {children}
-                {/* <Chat /> */}
+                <Chat />
                 <Footer />
             </body>
         </html>

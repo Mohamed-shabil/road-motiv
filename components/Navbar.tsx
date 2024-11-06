@@ -26,7 +26,9 @@ const Navbar = () => {
                 </Link>
                 <div className="md:flex hidden gap-4">
                     {navLinks.map((link) => (
-                        <Link href={link.url}>{link.label}</Link>
+                        <Link href={link.url} key={link.label}>
+                            {link.label}
+                        </Link>
                     ))}
                 </div>
                 <div className="md:hidden flex">
@@ -37,7 +39,9 @@ const Navbar = () => {
                         <SheetContent>
                             <div className="flex flex-col gap-4">
                                 {navLinks.map((link) => (
-                                    <Link href={link.url}>{link.label}</Link>
+                                    <Link href={link.url} key={link.label}>
+                                        {link.label}
+                                    </Link>
                                 ))}
                             </div>
                         </SheetContent>

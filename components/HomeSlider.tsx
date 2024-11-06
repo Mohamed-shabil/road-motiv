@@ -53,15 +53,12 @@ const HomeSlider = () => {
 
     console.log("Current Slide ", current);
     return (
-        <section className="w-full mx-auto p-4 my-24">
-            <Carousel
-                className=" rounded-lg overflow-hidden h-[90vh] md:h-[85vh]"
-                setApi={setApi}
-            >
-                <CarouselContent>
+        <section className="mx-auto px-4 md:p-0 mb-24 rounded-lg">
+            <Carousel setApi={setApi} className="rounded-lg">
+                <CarouselContent className="">
                     {headings.map((heading, index) => (
-                        <CarouselItem key={index}>
-                            <div className={`overflow-hidden relative`}>
+                        <CarouselItem key={index} className="rounded-md">
+                            <div className="relative rounded-md">
                                 <Image
                                     width={720}
                                     height={480}
@@ -69,12 +66,12 @@ const HomeSlider = () => {
                                     src={`/slide-${index + 1}.jpg`}
                                     alt={"tr"}
                                 />
-                                <div className="absolute w-full h-[85vh] top-0 left-0 flex items-center justify-center bg-slate-950/50 flex-col">
+                                <div className="absolute w-full h-[90vh] rounded-md top-0 left-0 flex items-center justify-center bg-slate-950/50 flex-col">
                                     <div
-                                        className="text-center flex flex-col gap-4 items-center "
+                                        className="text-center flex flex-col gap-4 items-center"
                                         data-aos="fade-up"
                                     >
-                                        <h4 className="max-w-2xl text-5xl text-white font-medium">
+                                        <h4 className="max-w-2xl text-xl md:text-5xl text-white font-medium ">
                                             {heading.heading}
                                         </h4>
                                         <p className="text-gray-300 max-w-md text-sm font-normal ">
@@ -86,8 +83,8 @@ const HomeSlider = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
+                <CarouselPrevious className="left-10" />
+                <CarouselNext className="right-10" />
             </Carousel>
         </section>
     );

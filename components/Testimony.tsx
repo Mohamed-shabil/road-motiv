@@ -45,7 +45,7 @@ export function Testimony() {
                     Why Choose us?
                 </h2>
             </div>
-            <div className="">
+            <div className="py-5 px-5">
                 <Carousel
                     opts={{
                         align: "center",
@@ -107,8 +107,8 @@ export function Testimony() {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious className="hidden md:flex" />
-                    <CarouselNext className="hidden md:flex" />
+                    <CarouselPrevious className="left-0" />
+                    <CarouselNext className="right-0" />
                 </Carousel>
             </div>
         </div>

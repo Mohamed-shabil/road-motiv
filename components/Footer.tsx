@@ -14,12 +14,14 @@ const Footer = () => {
                         Join Us Today And let Us Help <br />
                         You To Grow Your Business.
                     </h2>
-                    <Button
-                        className="bg-white text-primary hover:bg-primary/20 hover:text-white rounded-full"
-                        size={"lg"}
-                    >
-                        Contact us
-                    </Button>
+                    <Link href={"/contact"}>
+                        <Button
+                            className="bg-white text-primary hover:bg-primary/20 hover:text-white rounded-full"
+                            size={"lg"}
+                        >
+                            Contact us
+                        </Button>
+                    </Link>
                 </div>
                 <Separator />
                 <div className="p-2 bg-white rounded-t-xl mt-16">

@@ -7,7 +7,7 @@ import {
 
 const Features = () => {
     return (
-        <section className="h-auto mb-4 md:h-[43rem] bg-black">
+        <section className="h-auto mb-4 md:h-[43rem] py-10 bg-black">
             <div className="max-w-[1200px] mx-auto">
                 <div className="flex items-center justify-center flex-col py-10">
                     <h5 className="rounded-full bg-primary/50 text-white px-2 py-1 inline-block my-4 text-sm">

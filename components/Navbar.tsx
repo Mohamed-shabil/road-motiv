@@ -9,6 +9,7 @@ const Navbar = () => {
         { label: "About", url: "/about" },
         { label: "Services", url: "#sevices" },
         { label: "Testimony", url: "#testimony" },
+        { label: "Contact", url: "/contact" },
     ];
     return (
         <nav className="px-5  bg-white border-gray-200 shadow-md z-50 w-full top-0 sticky">

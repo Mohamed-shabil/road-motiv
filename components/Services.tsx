@@ -21,7 +21,7 @@ const services = [
     {
         title: "Equipment Rental",
         description:
-            "This quick and dependable transportation to global destinations, utilizing the best airlines, is recommended for sensitive and high-value shipments.",
+            "Efficient and reliable access to top-tier machinery for various projects, ensuring safety and productivity with well-maintained equipment tailored to meet your project needs",
     },
 ];
 

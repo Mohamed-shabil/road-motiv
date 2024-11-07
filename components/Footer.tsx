@@ -1,7 +1,5 @@
-import React from "react";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
-import { Facebook, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 

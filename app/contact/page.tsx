@@ -1,44 +1,7 @@
-import { Button } from "@/components/ui/button";
-import {
-    Building2,
-    CircleHelp,
-    Mail,
-    MessageSquareText,
-    Phone,
-} from "lucide-react";
+import { Building2, Mail, Phone } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 
 const ContactPage = () => {
-    const contacts = [
-        {
-            icon: <CircleHelp className="text-primary" />,
-            title: "Help Center",
-            description: "Get Question ? We got an answer",
-            link: "",
-        },
-        {
-            icon: <Phone className="text-primary" />,
-            title: "Call us now",
-            description:
-                "Need immediate assistance? Call us directly for support.",
-            link: "tel:+966 570855938",
-        },
-        {
-            icon: <MessageSquareText className="text-primary" />,
-            title: "Chat with us",
-            description: "Prefer texting? Start a WhatsApp chat with our team.",
-            link: "https://wa.me/+966598065938?text=Hi Road Motive",
-        },
-        {
-            icon: <Mail className="text-primary" />,
-            title: "Email us now",
-            description:
-                "Have a question? Send us an email and we’ll get back to you soon.",
-            link: "mailto:info@roadmotive.com",
-        },
-    ];
     return (
         <section className="max-w-[1200px] mx-auto text-gray-600 body-font">
             <div className="px-5 py-24 mx-auto">

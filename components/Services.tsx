@@ -18,16 +18,16 @@ const services = [
         description:
             "This quick and dependable transportation to global destinations, utilizing the best airlines, is recommended for sensitive and high-value shipments.",
     },
-    // {
-    //     title: "Equipment Rental",
-    //     description:
-    //         "This quick and dependable transportation to global destinations, utilizing the best airlines, is recommended for sensitive and high-value shipments.",
-    // },
+    {
+        title: "Equipment Rental",
+        description:
+            "This quick and dependable transportation to global destinations, utilizing the best airlines, is recommended for sensitive and high-value shipments.",
+    },
 ];
 
 const Services = () => {
     return (
-        <div className="bg-primary/5 h-auto">
+        <div className="bg-primary/5 h-auto" id="services">
             <div className="max-w-[1200px] mx-4 md:mx-auto">
                 <div className="flex items-center justify-center flex-col py-10">
                     <Badge content="| Road Motiv Services" />

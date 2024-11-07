@@ -80,48 +80,6 @@ const Footer = () => {
                                 </Link>
                             </li>
                         </ul>
-
-                        <ul className="mt-12 flex justify-center gap-6 md:gap-8">
-                            <li>
-                                <Link
-                                    href="#"
-                                    rel="noreferrer"
-                                    target="_blank"
-                                    className="text-gray-700 transition hover:text-gray-700/75"
-                                >
-                                    <span className="sr-only">Instagram</span>
-                                    <Instagram
-                                        size={"1.3em"}
-                                        className="text-primary"
-                                    />
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link
-                                    href="#"
-                                    rel="noreferrer"
-                                    target="_blank"
-                                    className="text-gray-700 transition hover:text-gray-700/75"
-                                >
-                                    <span className="sr-only">Twitter</span>
-                                    <Twitter
-                                        size={"1.3em"}
-                                        className="text-primary"
-                                    />
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link href="#" className="">
-                                    <span className="sr-only">Dribbble</span>
-                                    <Facebook
-                                        size={"1.3em"}
-                                        className="text-primary"
-                                    />
-                                </Link>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>

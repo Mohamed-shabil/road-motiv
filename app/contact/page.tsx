@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { CircleHelp, Mail, MessageSquareText, Phone } from "lucide-react";
+import {
+    Building2,
+    CircleHelp,
+    Mail,
+    MessageSquareText,
+    Phone,
+} from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -33,57 +40,98 @@ const ContactPage = () => {
         },
     ];
     return (
-        <section className="max-w-[1200px] mx-auto h-auto my-28">
-            <div className="flex items-center justify-center flex-col py-10">
-                <h5 className="rounded-full px-2 py-1 bg-primary/20 text-primary inline-block my-4 text-sm">
-                    | Road Motiv Logistics
-                </h5>
-                <h2 className="text-3xl text-center md:text-center md:text-4xl font-semibold leading-tight mx-4">
-                    Let Us Know Your Queries!
-                </h2>
-                <p className="text-sm max-w-lg  text-center my-2 mx-4">
-                    Team Road Motiv Logistics is always happy to answer all your
-                    queries. Please contact us in the given phone number or mail
-                    id at your convenience. We shall get back to you soon.
-                </p>
-            </div>
-            <div className="flex justify-center flex-col gap-4">
-                <div className="grid grid-cols-12 gap-4">
-                    {contacts.map((contact) => (
-                        <div
-                            className="col-span-12 flex justify-center md:col-span-6"
-                            key={contact.title}
-                        >
-                            <div className="mx-2 p-4 w-full max-w-xl rounded-lg bg-white">
-                                <div className="flex gap-2">
-                                    <div className="w-full flex gap-4 items-center">
-                                        <div className="rounded-lg w-12 h-12 bg-primary/30 flex items-center justify-center">
-                                            {contact.icon}
-                                        </div>
-                                        <div className="flex flex-col">
-                                            <h4 className="text-sm font-medium">
-                                                {contact.title}
-                                            </h4>
-                                            <p className="text-xs font-normal text-gray-500">
-                                                {contact.description}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <Link href={contact.link}>
-                                        <Button className="rounded-full">
-                                            {"Contact"}
-                                        </Button>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+        <section className="max-w-[1200px] mx-auto text-gray-600 body-font">
+            <div className="px-5 py-24 mx-auto">
+                <div className="flex items-center justify-center flex-col py-10">
+                    <h5 className="rounded-full px-2 py-1 bg-primary/20 text-primary inline-block my-4 text-sm">
+                        | Road Motiv Logistics
+                    </h5>
+                    <h2 className="text-3xl text-center md:text-center md:text-4xl font-semibold leading-tight mx-4">
+                        Let Us Know Your Queries!
+                    </h2>
+                    <p className="text-sm max-w-lg  text-center my-2 mx-4">
+                        Team Road Motiv Logistics is always happy to answer all
+                        your queries. Please contact us in the given phone
+                        number or mail id at your convenience. We shall get back
+                        to you soon.
+                    </p>
                 </div>
-                <div className="relative rounded-lg w-full h-96">
-                    <iframe
-                        className="absolute top-0 left-0 w-full h-full rounded-lg"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
-                    ></iframe>
+
+                <div className="flex flex-wrap -m-4 text-center">
+                    <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
+                        <div className="h-64 border border-slate-300 px-4 py-6 rounded-lg">
+                            <div className="flex items-center justify-center">
+                                <span className="w-16 h-16 mb-4 rounded-lg grid place-items-center bg-primary/20">
+                                    <Building2
+                                        className="text-primary"
+                                        strokeWidth={1.5}
+                                        size={"2rem"}
+                                    />
+                                </span>
+                            </div>
+                            <h2 className="title-font font-semibold text-xl text-gray-900">
+                                Company Details
+                            </h2>
+                            <p className="leading-relaxed">
+                                Dammam 32242
+                                <br />
+                                Al Faisaliah, PO Box 4868,
+                                <br />
+                                Kingdom Of Saudi Arabia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className=" p-4 md:w-1/3 sm:w-1/2 w-full">
+                        <div className="h-64 border border-slate-300 px-4 py-6 rounded-lg">
+                            <div className="flex items-center justify-center">
+                                <span className="w-16 h-16 mb-4 rounded-lg grid place-items-center bg-primary/20">
+                                    <Mail
+                                        className="text-primary"
+                                        strokeWidth={1.5}
+                                        size={"2rem"}
+                                    />
+                                </span>
+                            </div>
+                            <h2 className="title-font font-semibold text-xl text-gray-900">
+                                Email us
+                            </h2>
+                            <p className="leading-relaxed">
+                                info@roadmotiv.com <br />
+                                favas@roadmotiv.com <br />
+                                rauf@roadmotiv.com{" "}
+                            </p>
+                        </div>
+                    </div>
+                    <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
+                        <div className="h-64 border border-slate-300 px-4 py-6 rounded-lg">
+                            <div className="flex items-center justify-center">
+                                <span className="w-16 h-16 mb-4 rounded-lg grid place-items-center bg-primary/20">
+                                    <Phone
+                                        className="text-primary"
+                                        strokeWidth={1.5}
+                                        size={"2rem"}
+                                    />
+                                </span>
+                            </div>
+                            <h2 className="title-font font-semibold text-xl text-gray-900">
+                                Call us
+                            </h2>
+                            <p className="leading-relaxed">
+                                +966 59 806 5938 <br />
+                                +966 57 085 5938
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className=" my-5">
+                    <Image
+                        src={"/contact-use.jpg"}
+                        width={800}
+                        height={400}
+                        alt=""
+                        className="rounded-md w-full"
+                    />
                 </div>
             </div>
         </section>

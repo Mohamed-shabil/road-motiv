@@ -36,13 +36,13 @@ const testimonials = [
 
 export function Testimony() {
     return (
-        <div className="max-w-[1200px] mx-auto">
+        <div className="max-w-[1200px] mx-auto" id="testimony">
             <div className="flex items-center justify-center flex-col py-10">
                 <h5 className="rounded-full px-2 py-1 bg-primary/20 text-primary inline-block my-4 text-sm">
-                    | Cargon-Transport Logistics
+                    | Road Motiv Logistics
                 </h5>
                 <h2 className="text-3xl text-center md:text-center md:text-4xl font-semibold leading-tight mx-4 text-primary">
-                    Why Choose us?
+                    What our customers say
                 </h2>
             </div>
             <div className="py-5 px-5">

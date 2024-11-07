@@ -1,4 +1,5 @@
 import { Flag, Handshake, Target } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const AboutPage = () => {
@@ -8,15 +9,19 @@ const AboutPage = () => {
                 <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
                     <div className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
                         <div className="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                            <img
-                                className=" rounded-xl object-cover"
-                                src="https://pagedone.io/asset/uploads/1717741205.png"
+                            <Image
+                                width={300}
+                                height={500}
+                                className="rounded-xl object-cover"
+                                src={"/About-1.jpg"}
                                 alt="about Us image"
                             />
                         </div>
-                        <img
-                            className="sm:ml-0 ml-auto rounded-xl object-cover"
-                            src="https://pagedone.io/asset/uploads/1717741215.png"
+                        <Image
+                            width={300}
+                            height={500}
+                            className="rounded-xl object-cover"
+                            src={"/About-2.jpg"}
                             alt="about Us image"
                         />
                     </div>
@@ -58,13 +63,19 @@ const AboutPage = () => {
                     </div>
                 </div>
                 <div className="my-20 flex flex-wrap flex-row justify-between gap-2">
-                    <div className="p-4 rounded-md border border-slate-300 max-w-[350px]">
-                        <div className="flex items-center justify-center ">
-                            <span className="p-3  rounded-full bg-primary/70 mb-4">
-                                <Flag size={"3rem"} />
-                            </span>
+                    <div className="p-2 rounded-md border border-slate-300 max-w-[350px] shadow-md">
+                        <div className="max-w-[350px] h-48 overflow-hidden rounded-md">
+                            <Image
+                                src={"/vision.jpg"}
+                                width={300}
+                                height={200}
+                                alt="vision"
+                                className="w-full h-48 object-cover rounded-md hover:scale-110 ease-in duration-100"
+                            />
                         </div>
-                        <h2 className="text-center text-xl">Our Vision</h2>
+                        <h2 className="text-center text-2xl my-2 font-semibold">
+                            Our Vision
+                        </h2>
                         <p className="text-sm text-slate-600">
                             Our goal is to be an invaluable partner to our
                             clients by assisting them in developing and
@@ -76,13 +87,19 @@ const AboutPage = () => {
                             our business, honesty and respect.
                         </p>
                     </div>
-                    <div className="p-4 rounded-md border border-slate-300 w-full max-w-[380px] ">
-                        <div className="flex items-center justify-center">
-                            <span className="p-3  rounded-full bg-primary/70 mb-4">
-                                <Target size={"3rem"} />
-                            </span>
+                    <div className="p-2 rounded-md border border-slate-300 w-full max-w-[350px] shadow-md">
+                        <div className="max-w-[350px] h-48 overflow-hidden rounded-md">
+                            <Image
+                                src={"/mission.jpg"}
+                                width={300}
+                                height={200}
+                                alt="vision"
+                                className="w-full h-48 object-cover rounded-md hover:scale-110 ease-in duration-100"
+                            />
                         </div>
-                        <h2 className="text-center text-xl">Our Mission</h2>
+                        <h2 className="text-center text-2xl my-2 font-semibold">
+                            Our Mission
+                        </h2>
                         <p className="text-sm text-slate-600">
                             Our objective is to serve each and every one of our
                             clients with a great, dependable experience while
@@ -95,18 +112,27 @@ const AboutPage = () => {
                         </p>
                     </div>
 
-                    <div className="p-4 rounded-md border border-slate-300 w-full max-w-[350px] ">
-                        <div className="flex items-center justify-center">
-                            <span className="p-3  rounded-full bg-primary/70 mb-4">
-                                <Handshake size={"3rem"} />
-                            </span>
+                    <div className="p-2 rounded-md border border-slate-300 w-full max-w-[350px] shadow-md">
+                        <div className="max-w-[350px] h-48 overflow-hidden rounded-md">
+                            <Image
+                                src={"/service.jpg"}
+                                width={300}
+                                height={200}
+                                alt="vision"
+                                className="w-full h-48 object-cover rounded-md hover:scale-110 ease-in duration-100"
+                            />
                         </div>
-                        <h2 className="text-center text-xl">Our Service</h2>
+                        <h2 className="text-center text-2xl my-2 font-semibold">
+                            Our Service
+                        </h2>
                         <p className="text-sm text-slate-600">
-                            We are very much concentrated to achieve 100%
-                            satisfaction from our customers with our higher
-                            level of service experience. All our clients ensure
-                            us as a trusted goods transportation provider
+                            We are dedicated to delivering 100% customer
+                            satisfaction through exceptional service. Our
+                            clients trust us as a reliable goods transportation
+                            provider, and we work diligently to ensure each
+                            detail is handled with care and efficiency. Our goal
+                            is to exceed your expectations, building a
+                            relationship based on trust and outstanding service.
                         </p>
                     </div>
                 </div>

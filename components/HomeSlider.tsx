@@ -14,19 +14,16 @@ import "aos/dist/aos.css";
 
 const headings = [
     {
-        heading: "Dependable and Efficient Freight Solutions",
-        description:
-            "Road Motiv Logistics promises an unparalleled, hassle-free logistics experience, delivering excellence through world-class services, top-tier solutions, and a strong, reliable infrastructure.",
+        heading: "From doorstep to destination",
+        description: "Road Motiv ensures reliability every mile",
     },
     {
-        heading: "On-Time Deliveries, Every Time",
-        description:
-            "With our reliable transportation network, we guarantee timely deliveries, ensuring that your goods reach their destination without delay",
+        heading: "Effiency in motion comfort in every mile",
+        description: "Get Moving reserve your ride!",
     },
     {
-        heading: "High-Quality, Professional Logistics Services",
-        description:
-            "Whether you need air, sea, or ground transportation, our customized shipping services connect you to markets around the world.",
+        heading: "Road Transport ",
+        description: "Safe • Secure • Fast • Reliable",
     },
 ];
 const HomeSlider = () => {
@@ -71,10 +68,10 @@ const HomeSlider = () => {
                                         className="text-center flex flex-col gap-4 items-center"
                                         data-aos="fade-up"
                                     >
-                                        <h4 className="max-w-2xl text-xl md:text-5xl text-white font-medium ">
+                                        <h4 className="max-w-2xl text-2xl md:text-5xl text-white font-medium px-2">
                                             {heading.heading}
                                         </h4>
-                                        <p className="text-gray-300 max-w-md text-sm font-normal ">
+                                        <p className="text-gray-300 w-[80%] md:max-w-md text-sm font-normal ">
                                             {heading.description}
                                         </p>
                                     </div>

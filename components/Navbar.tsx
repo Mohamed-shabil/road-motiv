@@ -2,13 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
+import { Menu } from "lucide-react";
+
+const baseUrl = process.env.NEXT_PUBLIC_URL;
 
 const Navbar = () => {
     const navLinks = [
         { label: "Home", url: "/" },
         { label: "About", url: "/about" },
-        { label: "Services", url: "#sevices" },
-        { label: "Testimony", url: "#testimony" },
+        { label: "Services", url: `${baseUrl}/#services` },
+        { label: "Testimony", url: `${baseUrl}/#testimony` },
         { label: "Contact", url: "/contact" },
     ];
     return (
@@ -35,7 +38,9 @@ const Navbar = () => {
                 <div className="md:hidden flex">
                     <Sheet>
                         <SheetTrigger asChild>
-                            <Button variant="outline">Open</Button>
+                            <Button variant="ghost">
+                                <Menu strokeWidth={1.5} />
+                            </Button>
                         </SheetTrigger>
                         <SheetContent>
                             <div className="flex flex-col gap-4">

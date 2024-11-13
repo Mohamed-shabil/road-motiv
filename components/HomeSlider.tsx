@@ -18,8 +18,9 @@ const headings = [
         description: "Road Motiv ensures reliability every mile",
     },
     {
-        heading: "Effiency in motion comfort in every mile",
-        description: "Get Moving reserve your ride!",
+        heading: "Timely. Seamless. Trustworthy.",
+        description:
+            "Your Deliveries, our Commitment. Count on us to bring excellence to your doorstep every Time.",
     },
     {
         heading: "Road Transport ",

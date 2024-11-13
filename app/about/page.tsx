@@ -30,13 +30,13 @@ const AboutPage = () => {
                                     Empowering Each Other to Succeed
                                 </h2>
                                 <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                                    Road Motiv Transport is a Saudi -based
+                                    Road Motiv Transport is a Saudi-based
                                     logistics and transportation solutions
                                     provider. We have transformed ourselves into
                                     one of the most sought-after and trustworthy
                                     international prestigious companies in the
                                     GCC with our own offices in UAE, KSA, Qatar,
-                                    Kuwait, Bahrain and Oman.
+                                    Kuwait, Bahrain, and Oman.
                                 </p>
                                 <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
                                     Road Motiv Transport has tremendous
@@ -44,7 +44,7 @@ const AboutPage = () => {
                                     has become one of the trusted and recognized
                                     names in the field of logistics. We see
                                     ourselves as a One-Stop solution for our
-                                    customers
+                                    customers.
                                 </p>
                                 <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
                                     With unrivalled expertise and dedication to

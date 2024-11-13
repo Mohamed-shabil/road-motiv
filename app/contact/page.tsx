@@ -61,8 +61,6 @@ const ContactPage = () => {
                             </h2>
                             <p className="leading-relaxed">
                                 info@roadmotiv.com <br />
-                                favas@roadmotiv.com <br />
-                                rauf@roadmotiv.com{" "}
                             </p>
                         </div>
                     </div>

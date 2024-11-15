@@ -14,17 +14,17 @@ import "aos/dist/aos.css";
 
 const headings = [
     {
-        heading: "From doorstep to destination",
-        description: "Road Motiv ensures reliability every mile",
+        heading: "Road Motiv Transport ",
+        description: "Safe • Secure • Fast • Reliable",
+    },
+    {
+        heading: "From Doorstep To Destination",
+        description: "Road Motiv Ensures Reliability Every Mile",
     },
     {
         heading: "Timely. Seamless. Trustworthy.",
         description:
-            "Your Deliveries, our Commitment. Count on us to bring excellence to your doorstep every Time.",
-    },
-    {
-        heading: "Road Transport ",
-        description: "Safe • Secure • Fast • Reliable",
+            "Your Deliveries, Our Commitment. Count On Us To Bring Excellence To Your Doorstep Every Time.",
     },
 ];
 const HomeSlider = () => {

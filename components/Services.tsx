@@ -1,90 +1,137 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Badge from "./Badge";
+import {
+    AlarmClock,
+    BadgeCheck,
+    Building2,
+    Forklift,
+    HandCoins,
+    Headset,
+    MapPinned,
+    MonitorCog,
+    Sparkles,
+    ThermometerSnowflake,
+} from "lucide-react";
 
 const services = [
     {
-        title: "Sea Freight",
-        description:
-            "Our skilled team strategically optimizes shipping routes to deliver the most cost-efficient solutions while rigorously upholding precise timing and delivery commitments.",
+        src: "/services/1.png",
+        label: "Express Transport Services",
     },
     {
-        title: "Land Freight",
-        description:
-            "Our trained personnel, knowledgeable about technical capabilities and precise legal regulations, provide reliable and responsible services.",
+        src: "/services/2.png",
+        label: "Flatbed, Curtain, Low bed & freezer type trucks",
     },
     {
-        title: "Air Freight",
-        description:
-            "This quick and dependable transportation to global destinations, utilizing the best airlines, is recommended for sensitive and high-value shipments.",
+        src: "/services/3.png",
+        label: "Trucks On Monthly Basis Or Trip Wise",
     },
     {
-        title: "Equipment Rental",
-        description:
-            "Efficient and reliable access to top-tier machinery for various projects, ensuring safety and productivity with well-maintained equipment tailored to meet your project needs",
+        src: "/services/4.png",
+        label: "Ware House Management",
+    },
+    {
+        src: "/services/5.png",
+        label: "Rental Crane & Forklifts Services",
+    },
+    {
+        src: "/services/6.png",
+        label: "Shifting",
+    },
+    {
+        src: "/services/7.png",
+        label: "Movements",
     },
 ];
 
+const highlights = [
+    {
+        label: "Committed delivery on time.",
+        icon: <AlarmClock className="text-primary" />,
+    },
+    {
+        label: "Handling commodities with care",
+        icon: <HandCoins className="text-primary" />,
+    },
+    {
+        label: "Branches Across KSA",
+        icon: <Building2 className="text-primary" />,
+    },
+    {
+        label: "Computer Assisted Management",
+        icon: <MonitorCog className="text-primary" />,
+    },
+    {
+        label: "Handle Freezer type commodities",
+        icon: <ThermometerSnowflake className="text-primary" />,
+    },
+    {
+        label: "Availability of different vehicles as per customer choice",
+        icon: <Forklift className="text-primary" />,
+    },
+    {
+        label: "Track & trace system.",
+        icon: <MapPinned className="text-primary" />,
+    },
+    {
+        label: "24x7 support",
+        icon: <Headset className="text-primary" />,
+    },
+    {
+        label: "Quality customer service",
+        icon: <Sparkles className="text-primary" />,
+    },
+];
 const Services = () => {
     return (
         <div className="bg-primary/5 h-auto" id="services">
             <div className="max-w-[1200px] mx-4 md:mx-auto">
                 <div className="flex items-center justify-center flex-col py-10">
-                    <Badge content="| Road Motiv Services" />
+                    <Badge content="| Road Motiv Transports Services" />
                     <h2 className="text-center text-2xl md:text-4xl font-semibold leading-tight text-primary ">
                         Seamless Global Forwarding Solutions
                     </h2>
                     <p className="text-sm max-w-lg text-gray-700 text-center my-2 text-muted-foreground">
-                        At Road Motiv Logistics, we offer premium services
+                        At Road Motiv Transports, we offer premium services
                         including air freight, sea freight, land freight,
                         customs clearance, warehousing, project cargo handling,
                         insurance, and a quality assurance program.
                     </p>
                 </div>
-                <div className="pb-14 flex items-center flex-col flex-wrap gap-4">
-                    {services.map((service, i) => (
-                        <div
-                            key={i}
-                            className={cn(
-                                "flex flex-row",
-                                (i + 1) % 2 == 0
-                                    ? "flex-row-reverse"
-                                    : "flex-row"
-                            )}
-                            data-aos={
-                                (i + 1) % 2 == 0 ? "fade-left" : "fade-right"
-                            }
-                        >
-                            <div className="flex-1 flex items-center justify-center">
-                                <Image
-                                    src={`/s${i + 1}.png`}
-                                    width={500}
-                                    height={500}
-                                    alt=""
-                                />
-                            </div>
-                            <div className="flex-1 flex items-center">
-                                <div
-                                    className="max-w-md"
-                                    data-aos={
-                                        (i + 1) % 2 == 0
-                                            ? "fade-righ"
-                                            : "fade-left"
-                                    }
-                                >
-                                    <h1 className="text-6xl bg-gradient-to-b from-[#253d86] to-white text-transparent bg-clip-text">
-                                        0{i + 1}
-                                    </h1>
-                                    <h1 className="font-medium text-2xl my-4">
-                                        {service.title}
-                                    </h1>
-                                    <p className="text-sm">
-                                        {service.description}
-                                    </p>
+                <div className="relative bg-[url('/service-bg.jpg')] bg-cover w-full h-[50rem] md:h-[32rem] rounded-md mx-auto px-5 flex items-center">
+                    <div className="pb-14 flex items-center flex-row flex-wrap gap-4 mx-auto justify-center pt-5">
+                        {services.map((service) => (
+                            <div className="w-full max-w-80 flex flex-row gap-4 items-center bg-[#d3d8e7] rounded-md p-2">
+                                <div className="w-14 h-14 grid place-items-center rounded-md p-2">
+                                    <Image
+                                        src={service.src}
+                                        alt={service.label}
+                                        width={44}
+                                        height={44}
+                                    />
                                 </div>
+                                <h2 className="text-sm font-medium text-primary ">
+                                    {service.label}
+                                </h2>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
+                </div>
+                <div className="w-full mt-20 h-[50rem] md:h-[30rem]">
+                    <h2 className="text-center text-2xl md:text-4xl font-semibold leading-tight text-primary mb-8">
+                        Our Service Highlights
+                    </h2>
+                    <div className="flex items-center justify-center flex-wrap gap-2">
+                        {highlights.map((highlight) => (
+                            <div className="max-w-xs w-full rounded-md p-4 flex items-center gap-4">
+                                <div className="min-w-10">{highlight.icon}</div>
+                                <p className="text-primary text-wrap text-left">
+                                    {highlight.label}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

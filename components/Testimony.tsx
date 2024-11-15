@@ -65,7 +65,7 @@ export function Testimony() {
                                                 width={50}
                                                 height={50}
                                                 alt=""
-                                                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                                                src={"/user.png"}
                                                 className="size-14 rounded-full object-cover"
                                             />
 

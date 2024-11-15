@@ -11,7 +11,7 @@ const Features = () => {
             <div className="max-w-[1200px] mx-auto">
                 <div className="flex items-center justify-center flex-col py-10">
                     <h5 className="rounded-full bg-primary/50 text-white px-2 py-1 inline-block my-4 text-sm">
-                        | Road Motiv Logistics
+                        | Road Motiv Transports
                     </h5>
                     <h2 className="text-white text-3xl font-semibold leading-tight px-2 text-center">
                         Globally Competitive Solutions

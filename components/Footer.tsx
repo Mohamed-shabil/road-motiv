@@ -34,7 +34,7 @@ const Footer = () => {
                         </div>
 
                         <p className="mx-auto mt-6 max-w-lg text-center leading-relaxed text-gray-500">
-                            Road Motiv Logistics promises an unparalleled,
+                            Road Motiv Transports promises an unparalleled,
                             hassle-free logistics experience, delivering
                             excellence through world-class services, top-tier
                             solutions, and a strong, reliable infrastructure.

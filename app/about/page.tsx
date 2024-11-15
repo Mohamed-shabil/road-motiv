@@ -27,7 +27,7 @@ const AboutPage = () => {
                         <div className="w-full flex-col justify-center items-start gap-8 flex">
                             <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
                                 <h2 className="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                                    Empowering Each Other to Succeed
+                                    About Us
                                 </h2>
                                 <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
                                     Road Motiv Transport is a Saudi-based

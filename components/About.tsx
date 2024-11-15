@@ -56,16 +56,17 @@ const About = () => {
                     data-aos="fade-left"
                 >
                     <div>
-                        <Badge content="| Road Motiv Logistics" />
+                        <Badge content="| Road Motiv Transports" />
                         <h2 className="text-3xl md:text-4xl text-primary font-semibold leading-tight text-center md:text-left">
                             Fulfilling Promises, Every Single Day!
                         </h2>
                         <p className="text-sm text-center md:text-left text-muted-foreground my-5">
                             The preferred choice for logistics in the GCC, we
-                            are Road Motiv Logistics, Headquartered in the Saudi
-                            Arabia. Our Services extended to all over GCC, and
-                            we have evolved into one of the most sought-after
-                            and trusted international companies in the region.
+                            are Road Motiv Transports, Headquartered in the
+                            Saudi Arabia. Our Services extended to all over GCC,
+                            and we have evolved into one of the most
+                            sought-after and trusted international companies in
+                            the region.
                         </p>
                         <div className="flex flex-col md:h-16 h-auto flex-wrap gap-2 my-4">
                             <div className="flex gap-2 items-center">

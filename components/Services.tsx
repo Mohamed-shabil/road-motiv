@@ -1,9 +1,7 @@
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Badge from "./Badge";
 import {
     AlarmClock,
-    BadgeCheck,
     Building2,
     Forklift,
     HandCoins,
@@ -102,7 +100,10 @@ const Services = () => {
                 <div className="relative bg-[url('/service-bg.jpg')] bg-cover w-full h-[50rem] md:h-[32rem] rounded-md mx-auto px-5 flex items-center">
                     <div className="pb-14 flex items-center flex-row flex-wrap gap-4 mx-auto justify-center pt-5">
                         {services.map((service) => (
-                            <div className="w-full max-w-80 flex flex-row gap-4 items-center bg-[#d3d8e7] rounded-md p-2">
+                            <div
+                                key={service.label}
+                                className="w-full max-w-80 flex flex-row gap-4 items-center bg-[#d3d8e7] rounded-md p-2"
+                            >
                                 <div className="w-14 h-14 grid place-items-center rounded-md p-2">
                                     <Image
                                         src={service.src}
@@ -123,8 +124,11 @@ const Services = () => {
                         Our Service Highlights
                     </h2>
                     <div className="flex items-center justify-center flex-wrap gap-2">
-                        {highlights.map((highlight) => (
-                            <div className="max-w-xs w-full rounded-md p-4 flex items-center gap-4">
+                        {highlights.map((highlight, index) => (
+                            <div
+                                key={index}
+                                className="max-w-xs w-full rounded-md p-4 flex items-center gap-4 hover:bg-white ease-out transition"
+                            >
                                 <div className="min-w-10">{highlight.icon}</div>
                                 <p className="text-primary text-wrap text-left">
                                     {highlight.label}

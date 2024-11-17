@@ -4,8 +4,8 @@ import React from "react";
 const More = () => {
     return (
         <section className="max-w-[1200px] mx-auto p-5 h-auto min-h-[30rem]">
-            <div className="w-full grid grid-cols-12">
-                <div className="col-span-8" data-aos="fade-right">
+            <div className="w-full grid grid-cols-12" data-aos="fade-left">
+                <div className="col-span-12 sm:col-span-8">
                     <Image
                         src={"/truck.jpg"}
                         width={700}
@@ -13,10 +13,7 @@ const More = () => {
                         alt="truck"
                     />
                 </div>
-                <div
-                    className="col-span-4 flex flex-col items-center justify-center"
-                    data-aos="fade-left"
-                >
+                <div className="col-span-12 sm:col-span-4 flex flex-col items-center justify-center">
                     <h2 className="text-3xl text-center font-semibold text-primary">
                         Network
                     </h2>
